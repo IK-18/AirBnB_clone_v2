@@ -47,7 +47,7 @@ class Place(BaseModel, Base):
             return reviews
 
         @property
-        def amenity(self):
+        def amenities(self):
             """Getter for amenities"""
             amenities = []
             all_amenities = storage.all(Amenity)
